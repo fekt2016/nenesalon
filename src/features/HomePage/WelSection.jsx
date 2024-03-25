@@ -1,17 +1,21 @@
 import Section from '../../ui/Section'
 import Heading from '../../ui/Heading'
 import styled from 'styled-components'
+import { devicesMax } from '../../styles/breakpoint'
 
 const ImgBox = styled.div`
   flex: 1;
-  /* padding: 0 4rem; */
   height: 70rem;
+
   div {
     height: 100%;
     background-image: url('../../../image9.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  @media ${devicesMax.md} {
+    display: none;
   }
 `
 
@@ -31,6 +35,12 @@ const HeadingBox = styled.div`
   position: absolute;
   top: 150px;
   left: -100px;
+
+  @media ${devicesMax.md} {
+    top: 0;
+    left: 0;
+    padding: 4rem;
+  }
 `
 const TextBody = styled.div`
   height: 70%;
@@ -38,6 +48,9 @@ const TextBody = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: end;
+  @media ${devicesMax.md} {
+    margin-top: 20rem;
+  }
 `
 const P = styled.p`
   font-size: 2rem;
@@ -60,7 +73,7 @@ function WelSection() {
           <HeadingBox>
             <Heading as="h2">
               Welcome to <br />
-              Nene beauty Salon
+              Nae nae beauty Salon
             </Heading>
           </HeadingBox>
           <TextBody>
@@ -73,8 +86,10 @@ function WelSection() {
               we invite you to leave the stressors of daily life outside. <br />
               Take in the peace and tranquility of our living plant wall.
             </P>
-            <P>Nene</P>
-            <span>owner</span>
+            <P>
+              Nae Nae <br />
+              Owner
+            </P>
           </TextBody>
         </Box>
       </TextBox>

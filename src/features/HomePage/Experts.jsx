@@ -1,10 +1,15 @@
 import styled from 'styled-components'
 import Section from '../../ui/Section'
 import Heading from '../../ui/Heading'
+import { devicesMax } from '../../styles/breakpoint'
 
 const Container = styled.div`
   display: flex;
   gap: 40px;
+
+  @media ${devicesMax.md} {
+    flex-direction: column;
+  }
 `
 const LeftContainer = styled.div`
   flex: 1;
@@ -12,6 +17,11 @@ const LeftContainer = styled.div`
 
 const RightContainer = styled.div`
   flex: 1;
+
+  @media ${devicesMax.md} {
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 const HeadingBox = styled.div`
@@ -20,6 +30,9 @@ const HeadingBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media ${devicesMax.sm} {
+    padding: 1rem;
+  }
 `
 const P = styled.p`
   font-size: 1.8rem;
@@ -38,6 +51,9 @@ const ImgBox = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @media ${devicesMax.md} {
+    order: 2;
+  }
 `
 
 function Experts() {

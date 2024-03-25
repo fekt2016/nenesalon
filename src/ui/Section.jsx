@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import { devicesMax } from '../styles/breakpoint'
 
 const Section = styled.section`
   ${(props) =>
@@ -6,6 +7,10 @@ const Section = styled.section`
     css`
       display: flex;
       margin-bottom: 8rem;
+
+      @media ${devicesMax.md} {
+        flex-direction: column;
+      }
     `}
   ${(props) =>
     props.type === 'exp' &&
@@ -15,6 +20,9 @@ const Section = styled.section`
       display: flex;
       flex-direction: column;
       padding: 8rem;
+      @media ${devicesMax.sm} {
+        padding: 3rem;
+      }
     `}
 `
 

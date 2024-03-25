@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Heading from '../../ui/Heading'
 import Button from '../../ui/Button'
+import { devicesMax } from '../../styles/breakpoint'
 
 const StyledWel = styled.div`
   height: 50rem;
@@ -26,6 +27,11 @@ const ShapeBox = styled.div`
   flex: 1;
   background-color: rgba(16, 75, 83, 0.7);
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+
+  @media ${devicesMax.md} {
+    flex: 2;
+    background-color: var(--color-secoundary-900);
+  }
 `
 const StyledSpan = styled.span`
   color: var(--color-white-100);
@@ -36,7 +42,7 @@ function Welcome() {
     <StyledWel>
       <HeadingBox>
         <Heading as="h1">
-          nene beauty <br />
+          nae nae beauty <br />
           salon
         </Heading>
         <StyledSpan>
@@ -48,7 +54,7 @@ function Welcome() {
           make an Appointment
         </Button>
       </HeadingBox>
-      <ShapeBox>shape</ShapeBox>
+      <ShapeBox></ShapeBox>
     </StyledWel>
   )
 }
