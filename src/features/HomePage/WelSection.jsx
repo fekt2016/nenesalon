@@ -8,7 +8,7 @@ const ImgBox = styled.div`
   height: 70rem;
   div {
     height: 100%;
-    background-image: url('../../../public/image9.jpg');
+    background-image: url('../../../image9.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

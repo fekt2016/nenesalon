@@ -9,7 +9,7 @@ const StyledWel = styled.div`
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.9)
     ),
-    url('../../../public/image1.jpeg');
+    url('../../../image1.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
