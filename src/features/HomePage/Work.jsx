@@ -72,14 +72,14 @@ function Work() {
         </P>
       </HeadingBox>
       <ImgBox>
-        <Img type="one" src="../../../public/image1.jpeg" alt="images" />
-        <Img type="two" src="../../../public/image2.jpeg" alt="images" />
-        <Img type="three" src="../../../public/image3.jpeg" alt="images" />
-        <Img type="four" src="../../../public/image4.jpeg" alt="images" />
-        <Img type="five" src="../../../public/image5.jpeg" alt="images" />
-        <Img type="six" src="../../../public/image6.jpeg" alt="images" />
-        <Img type="seven" src="../../../public/image7.jpeg" alt="images" />
-        <Img type="eight" src="../../../public/image8.jpeg" alt="images" />
+        <Img type="one" src="../../../image1.jpeg" alt="images" />
+        <Img type="two" src="../../../image2.jpeg" alt="images" />
+        <Img type="three" src="../../../image3.jpeg" alt="images" />
+        <Img type="four" src="../../../image4.jpeg" alt="images" />
+        <Img type="five" src="../../../image5.jpeg" alt="images" />
+        <Img type="six" src="../../../image6.jpeg" alt="images" />
+        <Img type="seven" src="../../../image7.jpeg" alt="images" />
+        <Img type="eight" src="../../../image8.jpeg" alt="images" />
       </ImgBox>
     </Section>
   )
