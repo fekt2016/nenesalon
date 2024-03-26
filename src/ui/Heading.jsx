@@ -27,7 +27,7 @@ const Heading = styled.h1`
     ${(props) =>
       props.as === 'h3' &&
       css`
-        color: var(--color-textiary-900);
+        color: ${(props) => props.color};
         font-size: 3rem;
         text-transform: capitalize;
 
@@ -39,7 +39,7 @@ const Heading = styled.h1`
       ${(props) =>
         props.as === 'h4' &&
         css`
-          color: var(--color-textiary-900);
+          color: ${(props) => props.color};
           font-size: 3rem;
           text-transform: capitalize;
           @media ${devicesMax.sm} {
@@ -47,6 +47,13 @@ const Heading = styled.h1`
             text-align: center;
           }
         `}
+${(props) =>
+  props.as === 'h5' &&
+  css`
+    color: ${(props) => props.color};
+    font-size: 2rem;
+    font-weight: bold;
+  `}
 `
 
 export default Heading

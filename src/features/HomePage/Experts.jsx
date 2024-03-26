@@ -70,7 +70,9 @@ function Experts() {
       <Container>
         <LeftContainer>
           <div>
-            <Heading as="h4">Organic product</Heading>
+            <Heading as="h4" color={`var(--color-textiary-900)`}>
+              Organic product
+            </Heading>
             <Ps>
               Kindness and generosity are two values we hold dear in the service
               we provide for you and your hair. And so, we use only the best
@@ -82,7 +84,9 @@ function Experts() {
         <RightContainer>
           <ImgBox background={'../../../image6.jpeg'} />
           <div>
-            <Heading as="h4">A multi-sensory treat</Heading>
+            <Heading as="h4" color={`var(--color-textiary-900)`}>
+              A multi-sensory treat
+            </Heading>
             <Ps>
               From aromatherapy and music, to epic crown massages, your time at
               Haven Salon will be a multi-sensory experience, designed to

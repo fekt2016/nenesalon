@@ -24,6 +24,27 @@ const Section = styled.section`
         padding: 3rem;
       }
     `}
+  ${(props) =>
+    props.type === 'off' &&
+    css`
+      display: flex;
+
+      @media ${devicesMax.md} {
+        flex-direction: column;
+      }
+    `}
+  ${(props) =>
+    props.type === 'work' &&
+    css`
+      padding: 6rem;
+      background-color: var(--color-primary-900);
+      color: var(--color-textiary-900);
+    `}
+    ${(props) =>
+      props.type === 'test' &&
+      css`
+        background-color: var(--color-secoundary-900);
+      `}
 `
 
 export default Section
